@@ -1,11 +1,7 @@
+/*css코드*/
 * {
     padding: 0;
     margin: 0;
-}
-.rect {
-    border: 1px solid #000;
-    border-radius: 10px;
-    border-color: #000;
 }
 body {
     background-color: #444;
@@ -15,18 +11,23 @@ div.container {
     background-color: #fff;
     position: absolute;
     top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%)
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    padding: 30px;
+}
+.rect {
+    border: 1px solid #000;
+    border-radius: 10px;
+    border-color: #000;
 }
 div.main {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 450px;
-    height: 450px;
-    padding: 50px;
+    grid-template-columns: 1fr 1fr;
 }
 .inner_button {
     display: flex;
