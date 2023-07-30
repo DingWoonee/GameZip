@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+div.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.rect {
+    border: 1px solid #000;
+    border-radius: 10px;
+    border-color: #000;
+}
+.outer_rect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%)
+}
+.inner_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background: linear-gradient(to top, #222 , #f9f9f9a0 30%, #fffa);
+    font-size: 23px;
+    cursor: pointer;
+}
